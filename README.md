@@ -15,6 +15,6 @@ Clone this repository, then change directory and type:
 Clone this repository, then change directory and type:
 
 ```
-mvn install
+./mvnw install
 java -jar target/jmh-example-1.0-SNAPSHOT-perf-tests.jar
 ```

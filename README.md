@@ -7,7 +7,7 @@ Demo project showcasing JMH with Gradle and Maven.
 
 Clone this repository, then change directory and type:
 
-```./gradlew jmh```
+```./gradlew clean jmh```
 
 
 ## Maven
@@ -15,6 +15,6 @@ Clone this repository, then change directory and type:
 Clone this repository, then change directory and type:
 
 ```
-./mvnw install
+./mvnw clean package
 java -jar target/jmh-example-1.0-SNAPSHOT-perf-tests.jar
 ```

@@ -21,7 +21,7 @@ allprojects {
 apply plugin: 'me.champeau.gradle.jmh'
 
 jmh {
-    include = 'com\\.galiglobal\\.jmh\\.examples\\.FibonacciBenchmark.*'
+    include = 'com\\.galiglobal\\.jmh\\.example\\.FibonacciBenchmark.*'
     humanOutputFile = null
 }
 

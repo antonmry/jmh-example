@@ -1,0 +1,27 @@
+plugins {
+    id "me.champeau.gradle.jmh" version "0.4.3"
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    group = 'com.galiglobal'
+    version = '1.0-SNAPSHOT'
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+
+    repositories {
+        jcenter()
+    }
+}
+
+
+apply plugin: 'me.champeau.gradle.jmh'
+
+jmh {
+    include = 'com\\.galiglobal\\.jmh\\.examples\\.FibonacciBenchmark.*'
+    humanOutputFile = null
+}
+
